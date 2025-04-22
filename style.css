@@ -1,3 +1,18 @@
+:root{
+  --cor-de-fundo: #E1EEBC;
+  --cor-cabeçario:#ACC572;
+  --cor-de-texto: #000000;
+  --cor-de-tetalhe-texto: #024CAA;
+  --cor-arvore: #328E6E;
+  --cor-tronco: #854836;
+  --cor-maça: #E83F25;
+  --cor-geleia-amora: #7C4585;
+  --cor-mel: #FADA7A;
+  --cor-geleia-morango:#FF6363;
+  --cor-titulo: #99BC85;
+  --cor-rodapé: #000000;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
