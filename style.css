@@ -74,7 +74,24 @@ h1 {
         padding: 15px 30px;
     }
 }
+/* Estilos para o contêiner principal para centralizar o conteúdo */
+.container {
+    max-width: 1200px; /* Define uma largura máxima para o conteúdo */
+    margin-left: auto;  /* Centraliza o contêiner horizontalmente */
+    margin-right: auto; /* Centraliza o contêiner horizontalmente */
+    padding-left: 1rem; /* Adiciona preenchimento nas laterais para telas menores */
+    padding-right: 1rem; /* Adiciona preenchimento nas laterais para telas menores */
+}
 
+/* Estilos para a seção hero (destaque principal) */
+.hero {
+    /* Adiciona um preenchimento maior para a seção hero */
+    padding: 4rem 2rem;
+    /* Garante que o texto dentro do hero seja centralizado */
+    text-align: center;
+    /* Adiciona uma transição para o plano de fundo */
+    transition: background-color 0.3s ease;
+}
 
 /* Estilos para os cards de produto */
 .product-card {
