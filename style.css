@@ -1,9 +1,14 @@
-/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
-/* Este arquivo CSS é usado para estilos adicionais ou sobrescrições,
-   além das classes de utilidade do Tailwind CSS. */
-
-/* Estilos gerais para o corpo da página */
+:root{
+--font-primaria: "Alfa Slab One", serif;
+--font-secundaria: "Alfa Slab Two",serif;
+}
+.titulo{
+    font-family: var(--font-secundaria);
+}
+}
 body {
     margin: 0;
     font-family: sans-serif; /* Define a fonte padrão para o corpo */
@@ -17,14 +22,14 @@ body {
 
 /* Estilos para o painel de destaque */
 .panel {
-    background-color: #3cb371; /* Um tom de verde */
+    background-color:#9FC87E; /* Um tom de verde */
     color: white;
     text-align: center;
     padding: 50px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 1200px;
+    max-width: 2000px;
     box-sizing: border-box;
     /* Centraliza o painel na página se o body for display: flex e justify-content/align-items: center */
     margin: auto; /* Adiciona margin auto para centralizar horizontalmente quando o body é flex-direction: column */
@@ -34,9 +39,11 @@ body {
  }
 /* Estilos para o título principal dentro do painel */
 .panel h1 { /* Especifique .panel h1 para evitar conflitos */
-    font-size: 2.5em;
-    margin-bottom: 30px;
-}
+    font-size: 4.0em;
+    margin-bottom: 50px;
+    font-family: var(--font-primaria);
+    color: whitesmoke;
+    
 
 /* Estilos para o contêiner do botão */
 .button-container {
@@ -46,7 +53,7 @@ body {
 /* Estilos para o botão */
 .button {
     display: inline-block;
-    background: linear-gradient(to bottom, #8fddb1, #69c18c); /* Gradiente verde */
+    background: linear-gradient(to bottom,#84AE92,#84AE92); /* Gradiente verde */
     color: white;
     padding: 20px 40px;
     border-radius: 8px;
@@ -61,6 +68,12 @@ body {
 .button:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+.origem{
+    margin-top: 90px;
+    color:#096B68; 
+    font-size: 50px;
+    font-family: var(--font-primaria);
 }
  .footer{
     width: 100%;
