@@ -8,11 +8,14 @@
 .titulo{
     font-family: var(--font-secundaria);
 }
-}
+
 body {
     margin: 0;
     font-family: sans-serif; /* Define a fonte padrão para o corpo */
-    background-color: #f0f0f0; /* Fundo claro para a página */
+    background-image: url("img/fundo.jpg");
+     background-repeat: no-repeat;
+background-position: 30% 45%;
+  background-size: cover;
     min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da viewport */
     display: flex; /* Usa flexbox para o layout principal */
     flex-direction: column; /* Organiza os itens em coluna */
@@ -70,7 +73,7 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 .origem{
-    margin-top: 90px;
+    margin-top:200px;
     color:#096B68; 
     font-size: 50px;
     font-family: var(--font-primaria);
