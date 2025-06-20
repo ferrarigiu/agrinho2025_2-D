@@ -1,1 +1,5 @@
 # agrinho2025_2-D
+Meu site foi inspirado no processo pordutivo que vem desde o campo, mostrando cada etapa que os produtos passam até chegarem à nós. Visando assim a conscientização sobre a impotancia e representação  do campo no nosso coditiano, e destacando o fato da nossa interdependência entre campo e cidade, trocando beneficios mútuos um com o outro. 
+O processo de criação do site foi contribuiu muito para o aprendizado da linguagem Java Script, html e css, além de incentivar o uso da criatividade para montar e aperfeiçoar o site do nosso jeito e o uso do raciocínio lógico para analisar os códigos. 
+As imagens utilizadas no site foram retiradas da Plataforma Canva, as fontes utilizadas nas frases foram retiradas do Google forms, a paleta de cores utlizada foi retirada do site Color Hunt, foi utilizado o site Remove.bg para retirar o fundo das imagens utilizadas e foi utlizados alguns auxílios para os códigos da Inteligência Artificial do Google Gemini. 
+O site foi feito de forma gradual a cada aula e com o auxílio da professora para a finalização do projeto e realização de retoques para o melhor funcionamento e aparência do site. 
