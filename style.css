@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Style+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 :root{
 --font-primaria: "Alfa Slab One", serif;
 --font-secundaria: "Alfa Slab Two",serif;
+--font-tercearia: "Zilla Slab", serif;
 }
 .titulo{
     font-family: var(--font-secundaria);
@@ -12,15 +14,21 @@
 body {
     margin: 0;
     font-family: sans-serif; /* Define a fonte padrão para o corpo */
-    background-image: url("img/fundo.jpg");
-     background-repeat: no-repeat;
-background-position: 30% 45%;
-  background-size: cover;
     min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da viewport */
-    display: flex; /* Usa flexbox para o layout principal */
     flex-direction: column; /* Organiza os itens em coluna */
     /* Define uma transição suave para mudanças de cor de fundo e texto */
     transition: background-color 0.3s ease, color 0.3s ease;
+    overflow: visible; /* Mostra barras de rolagem */
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7; /* Cor de fundo suave */
+}
+canvas {
+    position: fixed; /* Fixa o canvas no fundo */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Envia o canvas para o fundo */
+    background-color: #F5F0CD; 
 }
 
 /* Estilos para o painel de destaque */
@@ -28,7 +36,7 @@ background-position: 30% 45%;
     background-color:#9FC87E; /* Um tom de verde */
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 30px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 100%;
@@ -45,39 +53,41 @@ background-position: 30% 45%;
     font-size: 4.0em;
     margin-bottom: 50px;
     font-family: var(--font-primaria);
-    color: whitesmoke;
-    
-
-/* Estilos para o contêiner do botão */
-.button-container {
-    margin-top: 30px;
+    color: #326e3b;
+    text-align: center;
+    width: 100%;
 }
 
-/* Estilos para o botão */
-.button {
-    display: inline-block;
-    background: linear-gradient(to bottom,#84AE92,#84AE92); /* Gradiente verde */
-    color: white;
-    padding: 20px 40px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 1.8em; /* Tamanho de fonte maior para o texto do botão */
-    font-weight: bold; /* Deixa o texto em negrito para destacar */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Efeito de hover para o botão */
-.button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
 .origem{
-    margin-top:200px;
-    color:#096B68; 
-    font-size: 50px;
-    font-family: var(--font-primaria);
+    margin-top: 40px;
+    color: black; 
+    font-size: 40px;
+    font-family: var(--font-tercearia);
 }
+
+.content {
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo fique acima do canvas */
+    text-align: center;
+    padding: 2rem;
+    background-color: white; /* Fundo branco semi-transparente para o conteúdo */
+    border-radius: 1rem; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 60vw;
+    margin: 1rem;
+    margin-left: 300px;
+}
+h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+p {
+    color: #34495e;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
  .footer{
     width: 100%;
  }
